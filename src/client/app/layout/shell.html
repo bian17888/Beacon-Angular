@@ -1,0 +1,14 @@
+<div ng-controller="Shell as vm">
+
+    <!-- 顶部导航 -->
+    <header class="clearfix">
+      <nav class="nav-top" ng-include="'app/layout/sidebar.html'"></nav>
+    </header>
+
+    <!-- 内容区 ng-view -->
+    <div ng-view class="main-content"></div>
+
+  <!-- loading 效果 -->
+	<section ng-include="'app/layout/ngplus.html'"></section>
+
+</div>
