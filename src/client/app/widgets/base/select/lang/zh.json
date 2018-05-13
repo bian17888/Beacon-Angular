@@ -1,0 +1,9 @@
+{
+  "zh" : {
+    "directive" : {
+      "widgets.base.select.lang" : {
+        "name" : "中文 111"
+      }
+    }
+  }
+}

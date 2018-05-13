@@ -1,0 +1,9 @@
+<section class="m-widgets-base-select" ng-class="{active : show, disabled : selectData.config.disabled}">
+  <h6 ng-click="selectData.config.disabled ? null : selectToggle()">
+    <span>{{selectData.user.value || selectData.config.placeholder}}</span>
+    <i class="fa" ng-class="show ? 'fa-chevron-up' : 'fa-chevron-down' "></i>
+  </h6>
+  <ul>
+    <li ng-repeat="val in selectData.options" ng-click="selectOption(val)">{{val.value}}</li>
+  </ul>
+</section>

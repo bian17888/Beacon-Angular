@@ -16,7 +16,6 @@
     var vm = this;
 
     vm.title = config.appTitle;
-    vm.showSplash = true;
 
     activate();
 
@@ -30,14 +29,8 @@
     function activate() {
       logger.info(config.appTitle + ' loaded!', null);
       dataservice.ready().then(function () {
-        hideSplash();
-      });
-    }
 
-    function hideSplash() {
-      $timeout(function () {
-        vm.showSplash = false;
-      }, 1000);
+      });
     }
   }
 })();

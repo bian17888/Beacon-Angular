@@ -1,0 +1,12 @@
+<section class="m-widgets-base-radio" ng-class="{'m-widgets-base-radio-inline' : radioData.config.typeOfInline}">
+  <ul>
+    <li ng-repeat="val in radioData.options">
+      <label
+          ng-class="{active : val.checked, disabled : val.disabled}"
+          ng-click="val.disabled ? null : toggle(val)">
+        <span class="item"><i></i></span>
+        <span class="text">{{val.value}}</span>
+      </label>
+    </li>
+  </ul>
+</section>

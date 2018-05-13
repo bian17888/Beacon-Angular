@@ -1,0 +1,48 @@
+// checkbox 组件
+.m-widgets-base-checkbox
+  li
+    label
+      display: flex
+      align-items: center
+      span.text
+        line-height: 18px
+      span.item
+        position: relative
+        display: inline-block
+        width: 16px
+        height: 16px
+        cursor: pointer
+        line-height: 0
+        background-color: #fff
+        border: 1px solid #c3c5c6
+        margin-right: 10px
+        z-index: 9
+        i
+          position: absolute
+          left: 1px
+          top: 1px
+          display: inline-block
+          font-size: 12px
+          color: #fff
+          z-index: 99
+    label.active
+      span.item
+        border-color: #00c1de
+        background-color: #00c1de
+    label.disabled
+      span.item
+        cursor: not-allowed
+        background-color: #f5f5f6
+        border-color: #d7d8d9
+        i
+          color: #f5f5f6
+    label.active.disabled
+      span.item
+        background-color: #ebecf0
+        border-color: #d7d8d9
+        i
+          color: #c3c5c6
+.m-widgets-base-checkbox-inline
+  li
+    display: inline-block
+    margin-right: 20px

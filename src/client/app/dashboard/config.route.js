@@ -31,6 +31,19 @@
             content: '<i class="fa fa-dashboard"></i> Dashboard'
           }
         }
+      },
+      {
+        url: '/dashboard/form',
+        config: {
+          templateUrl: 'app/dashboard/form/index.html',
+          controller: 'DashboardForm',
+          controllerAs: 'vm',
+          title: 'DashboardForm',
+          settings: {
+            nav: 3,
+            content: '<i class="fa fa-dashboard"></i> Form'
+          }
+        }
       }
     ];
   }

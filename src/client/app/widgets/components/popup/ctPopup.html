@@ -1,0 +1,22 @@
+<section class="m-widgets-componets-popup" ng-class="{active : popupShow}">
+  <div class="content">
+    <h6 class="header">
+      <span>什么是新用户?</span>
+      <i ng-click="closePopup()">x</i>
+    </h6>
+    <div ng-bind-html="popupBody" class="body">
+
+    </div>
+    <div class="footer">
+      <button class="btn btn-info" type="button" ng-click="closePopup()">{{'directive.widgets_components_popup_lang.name' | translate}}</button>
+      <!--2个预置按钮-->
+      <button ng-if="btn1Config.show" ng-click="btn1Fn()" ng-class="btn1Config.classname" class="btn" type="button">
+        {{btn1Config.text}}
+      </button>
+      <button ng-if="btn2Config.show" ng-click="btn2Fn()" ng-class="btn2Config.classname" class="btn" type="button">
+        {{btn2Config.text}}
+      </button>
+    </div>
+  </div>
+  <div class="background"></div>
+</section>

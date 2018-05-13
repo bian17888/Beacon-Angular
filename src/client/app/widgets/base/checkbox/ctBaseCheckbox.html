@@ -1,0 +1,12 @@
+<section class="m-widgets-base-checkbox" ng-class="{'m-widgets-base-checkbox-inline' : checkboxData.config.typeOfInline}">
+  <ul>
+    <li ng-repeat="val in checkboxData.options">
+      <label
+          ng-class="{active : val.checked, disabled : val.disabled}"
+          ng-click="val.disabled ? null : toggle(val)">
+        <span class="item"><i class="fa fa-check"></i></span>
+        <span class="text">{{val.value}}</span>
+      </label>
+    </li>
+  </ul>
+</section>

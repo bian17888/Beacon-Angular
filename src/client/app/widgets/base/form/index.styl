@@ -1,0 +1,30 @@
+form.m-form
+  font-size: 14px
+  // 正常状态
+  .m-form-item
+    //公共部分
+    .m-input,
+    textarea
+      border: 1px solid #d7d8d9
+      padding: 8px 12px
+    .m-input:hover,
+    textarea:hover
+      border-color: #00c1de
+    .m-input
+      height: 30px
+      line-height: 30px
+      padding: 0 12px
+    .m-form-item-helper
+      color: #a8a8a8
+      font-size: 12px
+  // 报错状态
+  .m-form-item-error
+    .m-input,
+    .m-input:hover
+    textarea,
+    textarea:hover
+      border-color: #f15533
+    .m-form-item-feedback
+      color: #f15533
+      i.fa
+        margin-right: 5px

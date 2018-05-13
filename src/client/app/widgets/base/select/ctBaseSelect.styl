@@ -1,0 +1,54 @@
+// select 选择组件
+.m-widgets-base-select
+  position: relative
+  display: inline-block
+  width: 200px
+  z-index: 9
+  h6
+    display: flex
+    justify-content: space-between
+    align-items: center
+    line-height: 20px
+    border: 1px solid #d7d8d9
+    padding: 7px 12px
+    margin: 0
+    span
+      flex: auto
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .fa
+      width: 14px
+  h6:hover
+    cursor: pointer
+    border-color: #00c1de
+  ul
+    position: absolute
+    left: 0
+    top: 36px
+    width: 100%
+    display: none
+    background-color: #fff
+    border: 1px solid #d7d8d9
+    border-top: 0
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+    li
+      line-height: 20px
+      padding: 4px 12px
+    li:hover
+      cursor: pointer
+      background-color: #f5f5f6
+
+.m-widgets-base-select.active
+  h6
+    border-color: #00c1de
+  ul
+    display: block
+
+.m-widgets-base-select.disabled
+  h6
+    color: #c3c5c6
+    cursor: not-allowed
+    background-color: #f5f5f6
+  h6:hover
+    border-color: #d7d8d9
