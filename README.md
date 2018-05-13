@@ -328,3 +328,4 @@ api.js为总入文件, 用来配置 “请求url” 与 “假数据文件路径
 - 优化
     - 初始化 hideSplash 遮罩层
     - layout/shell.js, vm.isCurrent()性能问题
+    - directive - base/form完善
